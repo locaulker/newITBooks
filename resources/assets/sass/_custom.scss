@@ -1,7 +1,13 @@
-h1 {
-  font-weight: 100;
-  text-transform: uppercase;
+.jumbotron {
+  margin-top: -22px;
+  
+  h1 {
+    font-size: 6rem;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
 }
+
 h2 {
   font-weight: 300;
 }

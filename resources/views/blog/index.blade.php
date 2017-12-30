@@ -2,9 +2,9 @@
 
 @section('content')
 
-  <main class="container">
+  <main class="container-fluid">
     <div class="row">
-      <div class="jumbotron">
+      <div class="jumbotron text-center">
         <h1>Latest Blog Posts</h1>
       </div>
 
@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <article>
-            <h2>{{$blog->title}}</h2>
+            <h2><a href="{{ action('BlogController@show', [$blog->id]) }}">{{$blog->title}}</a></h2>
             <p>{{$blog->body}}</p>
           </article>
         </div>
@@ -21,6 +21,4 @@
     </div>
   </main>
 
-
-  
 @endsection
