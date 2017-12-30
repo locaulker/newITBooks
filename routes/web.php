@@ -11,12 +11,15 @@
 |
 */
 
-Route::get('/blog/bin', 'BlogController@bin');
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
+
+Route::get('/blog/bin', 'BlogController@bin');
+Route::get('/blog/bin/{id}/restore', 'BlogController@restore');
+Route::delete('/blog/bin/{id}/destroyBlog', 'BlogController@destroyBlog');
 
 Route::get('/home', 'HomeController@index');
 Route::get('/blog', 'BlogController@index');
