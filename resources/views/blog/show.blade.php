@@ -6,7 +6,7 @@
     <div class="row">
       <article>
         <div class="jumbotron text-center">
-          <h1>{{$blog->title}}</h1>
+          <h1>{{$blog->title}}</h1><a class="btn btn-primary" style="float: right;" href="{{ action('BlogController@edit', [$blog->id]) }}">Edit Blog</a>
         </div>
     
         <div class="row">
